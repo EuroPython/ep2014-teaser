@@ -1,0 +1,105 @@
+@import "compass/reset";
+
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+
+$blue: #00788c;
+$yellow: #e1e04a;
+$orange: #ed6e48;
+
+
+$imageWidth: 334px;
+$infoWidth: 350px;
+$gap: 60px;
+$basePadding: 30px;
+$baseWidth: $imageWidth + $gap + $infoWidth + $basePadding;
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    color: #999;
+    // background: #EAEAEA; //#FAFAFA;
+    background: #FAFAFA;
+    padding-top: 60px;
+}
+
+article {
+    width: $baseWidth;
+    margin: auto;
+    overflow: hidden;
+    padding: $basePadding 0 $basePadding $basePadding;
+    border: 1px solid #EAEAEA;
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: 2px 2px 2px #F1F1F1;
+    background: #FFF url(../images/infobg.png) bottom right no-repeat;
+}
+
+img {
+    float: left;
+    width: $imageWidth;
+}
+
+#info {
+    float: right;
+    width: $infoWidth;
+    margin-left: $gap;
+    padding-right: $basePadding;
+    padding-bottom: 50px;
+    font-size: 1.3rem;
+    line-height: 120%;
+}
+
+#credits {
+    font-size: 80%;
+    margin-top: 30px;
+    border-top: 2px dotted #eaeaea;
+    padding-top: 30px;
+}
+
+p {
+    margin-top: 1em;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+strong {
+    font-weight: bold;
+    color: $blue;
+    font-size: 110%;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: $orange;
+    font-style: italic;
+}
+
+@media (screen and max-width: 800px) {
+    body {
+        padding-top: 0;
+    }
+    article {
+        text-align: center;
+        width: 80%;
+        padding: 10%;
+        border: 0;
+    }
+    img, #info {
+        clear: both;
+        margin: auto;
+        width: auto;
+        float: none;
+        padding: 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    #info {
+        margin-top: 40px;
+    }
+
+}
