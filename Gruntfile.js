@@ -37,6 +37,15 @@ module.exports = function(grunt) {
                 livereload: 35729
             }
         },
+        rev: {
+            dist: {
+                src: ['dist/assets/css/*.css', 'dist/assets/images/*.png']
+            }
+        },
+        usemin: {
+            html: 'dist/index.html',
+            css: ['dist/assets/css/*.css']
+        },
         watch: {
             compass: {
                 files: ['app/assets/sass/*.scss'],
@@ -64,6 +73,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-rev');
 
     grunt.registerTask('default', ['server']);
 
@@ -80,7 +91,9 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean',
             'compass:dist',
-            'copy:dist'
+            'copy:dist',
+            'rev:dist',
+            'usemin'
         ]);
     });
 };
