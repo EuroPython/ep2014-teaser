@@ -8,11 +8,22 @@ module.exports = function(grunt) {
                 imagesDir: 'app/assets/images'
             },
             server: {},
-            clean: {
+            dist: {
                 options: {
-                    clean: true
+                    outputStyle: 'compressed'
                 }
             }
+        },
+        copy: {
+            dist: {
+                files: [
+                    {expand: true, cwd: 'app', src: ['assets/images/*.png', 'assets/css/*', 'index.html'], dest: 'dist'}
+                ]
+            }
+        },
+        clean: {
+            dist: ['dist'],
+            compass: ['app/assets/css/*']
         },
         connect: {
             livereload: {
@@ -51,6 +62,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['server']);
 
@@ -63,5 +76,11 @@ module.exports = function(grunt) {
         ])
     });
 
-    grunt.registerTask('clean', ['compass:clean']);
+    grunt.registerTask('dist', function(target) {
+        grunt.task.run([
+            'clean',
+            'compass:dist',
+            'copy:dist'
+        ]);
+    });
 };
