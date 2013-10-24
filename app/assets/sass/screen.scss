@@ -1,105 +1,194 @@
 @import "compass/reset";
+@import url(https://ep14-static.veit-schiele.de/dejarip.css);
 
-@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+//-----------------------------------------------------------------------------
 
-$blue: #00788c;
-$yellow: #e1e04a;
-$orange: #ed6e48;
+$highlightColor: #D65216;
+$baseColor: #648899;
+$infoColor: #00788C;
+$background1: #E5EDF1;
+$baseFont: 'DejaRip', 'Verdana', sans-serif;
+$boldFont: 'DejaRip-Bold', 'Verdana', sans-serif;
 
+//-----------------------------------------------------------------------------
 
-$imageWidth: 334px;
-$infoWidth: 350px;
-$gap: 60px;
-$basePadding: 30px;
-$baseWidth: $imageWidth + $gap + $infoWidth + $basePadding;
+html {
+    font-size: 62.5%;
+    font-family: $baseFont;
+    line-height: 150%;
+}
 
 body {
-    font-size: 16px;
-    font-family: 'Karla', sans-serif;
-    color: #999;
-    // background: #EAEAEA; //#FAFAFA;
-    background: #FAFAFA;
-    padding-top: 60px;
-}
-
-article {
-    width: $baseWidth;
-    margin: auto;
-    overflow: hidden;
-    padding: $basePadding 0 $basePadding $basePadding;
-    border: 1px solid #EAEAEA;
-    border-radius: 0px 30px 0px 30px;
-    box-shadow: 2px 2px 2px #F1F1F1;
-    background: #FFF url(../images/infobg.png) bottom right no-repeat;
-}
-
-img {
-    float: left;
-    width: $imageWidth;
-}
-
-#info {
-    float: right;
-    width: $infoWidth;
-    margin-left: $gap;
-    padding-right: $basePadding;
-    padding-bottom: 50px;
-    font-size: 1.3rem;
-    line-height: 120%;
-}
-
-#credits {
-    font-size: 80%;
-    margin-top: 30px;
-    border-top: 2px dotted #eaeaea;
-    padding-top: 30px;
+    color: $baseColor;
+    background: #FFFFFF;
+    text-align: center;
 }
 
 p {
-    margin-top: 1em;
-    &:first-child {
-        margin-top: 0;
+    line-height: 140%;
+}
+
+header {
+    background: $background1 url(../images/headerbg.png) 50% 100% no-repeat;
+    .inner {
+        overflow: hidden;
+        position: relative;
+    }
+    h1 {
+        margin: 30px 0 35px 0;
+    }
+    p {
+        position: absolute;
+        top: 70px;
+        right: 25px;
+        font-size: 21px;
+        font-size: 2.1rem;
+        text-align: left;
+    }
+}
+
+header .inner, section, footer {
+    width: 1000px;
+    margin: auto;
+}
+
+#info {
+    font-size: 32px;
+    font-size: 3.2rem;
+    padding: 60px 0;
+    color: $infoColor;
+    width: 800px; // Override for styling purposes
+
+}
+
+#get-notified {
+    width: 782px;
+    border-radius: 5px;
+    background: $background1;
+    form {
+        padding: 38px;
+        font-size: 21px;
+        font-size: 2.1rem;
+        p {
+            margin-bottom: 25px;
+        }
+
+        input {
+            padding: 14px;
+            width: 300px - 14px - 14px;
+            border: 1px solid #bbced2;
+            color: #94B1B7;
+        }
+
+        button {
+            background: $highlightColor;
+            color: #FFF;
+            font-weight: bold;
+            font-family: $boldFont;
+            border: none;
+            padding: 14px 50px;
+            border: 1px solid darken($highlightColor, 10);
+            margin-left: 14px;
+        }
+
+        input, button {
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 18px;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+   color: #94B1B7;
+}
+
+::-moz-placeholder {
+   color: #94B1B7;
+}
+
+:-ms-input-placeholder {  
+   color: #94B1B7;
+}
+
+#social {
+    padding: 40px 0;
+    font-size: 32px;
+    font-size: 3.2rem;
+    color: $infoColor;
+
+    ul {
+        margin-top: 20px;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+
+
+footer {
+    border-top: 1px solid #bcc7cb;
+    padding-top: 30px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-size: 1.6rem;
+
+    a {
+        font-weight: bold;
+        font-family: $boldFont;
+        color: $baseColor;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
 strong {
     font-weight: bold;
-    color: $blue;
-    font-size: 110%;
+    font-family: $boldFont;
+    color: $highlightColor;
 }
 
-em {
-    font-style: italic;
+//-----------------------------------------------------------------------------
+
+@media (screen and max-width: 1000px) {
+    header .inner, section, footer, #info {
+        width: 100%;
+    }
 }
 
-a {
-    color: $orange;
-    font-style: italic;
+@media (screen and max-width: 782px) {
+    #get-notified {
+        width: 100%;
+    }
 }
 
-@media (screen and max-width: 800px) {
-    body {
-        padding-top: 0;
+@media (screen and max-width: 550px) {
+    header p {
+        // We hide the info text because it would overlap with the logo
+        display: none;
     }
-    article {
-        text-align: center;
-        width: 80%;
-        padding: 10%;
-        border: 0;
-    }
-    img, #info {
-        clear: both;
-        margin: auto;
-        width: auto;
-        float: none;
-        padding: 0;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    #info {
-        margin-top: 40px;
-    }
+}
 
+@media (screen and max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
+    #get-notified form {
+        input, button {
+            width: 70%;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: auto;
+            display: block;
+        }
+        input {
+            margin-bottom: 5px;
+        }
+    }
 }
