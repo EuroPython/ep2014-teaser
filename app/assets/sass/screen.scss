@@ -58,58 +58,27 @@ header .inner, section, footer {
     padding: 60px 0;
     color: $infoColor;
     width: 800px; // Override for styling purposes
-
 }
 
 #get-notified {
     width: 782px;
     border-radius: 5px;
     background: $background1;
-    form {
-        padding: 38px;
-        font-size: 21px;
-        font-size: 2.1rem;
-        p {
-            margin-bottom: 25px;
-        }
-
-        input {
-            padding: 14px;
-            width: 300px - 14px - 14px;
-            border: 1px solid #bbced2;
-            color: #94B1B7;
-        }
-
-        button {
-            background: $highlightColor;
-            color: #FFF;
+    padding: 38px;
+    box-sizing: border-box;
+    font-size: 26px;
+    font-size: 2.6rem;
+    p {
+        a {
             font-weight: bold;
             font-family: $boldFont;
-            border: none;
-            padding: 14px 50px;
-            border: 1px solid darken($highlightColor, 10);
-            margin-left: 14px;
-        }
-
-        input, button {
-            display: inline-block;
-            border-radius: 5px;
-            font-size: 18px;
-            font-size: 1.8rem;
+            color: $baseColor;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
-}
-
-::-webkit-input-placeholder {
-   color: #94B1B7;
-}
-
-::-moz-placeholder {
-   color: #94B1B7;
-}
-
-:-ms-input-placeholder {  
-   color: #94B1B7;
 }
 
 #social {
@@ -126,8 +95,6 @@ header .inner, section, footer {
         display: inline-block;
     }
 }
-
-
 
 footer {
     border-top: 1px solid #bcc7cb;
@@ -178,17 +145,5 @@ strong {
 @media (screen and max-width: 400px) {
     html {
         font-size: 50%;
-    }
-    #get-notified form {
-        input, button {
-            width: 70%;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin: auto;
-            display: block;
-        }
-        input {
-            margin-bottom: 5px;
-        }
     }
 }
