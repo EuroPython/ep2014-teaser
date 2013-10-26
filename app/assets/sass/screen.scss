@@ -1,5 +1,4 @@
 @import "compass/reset";
-@import url(https://ep14-static.veit-schiele.de/dejarip.css);
 
 //-----------------------------------------------------------------------------
 
@@ -7,8 +6,8 @@ $highlightColor: #D65216;
 $baseColor: #648899;
 $infoColor: #00788C;
 $background1: #E5EDF1;
-$baseFont: 'DejaRip', 'Verdana', sans-serif;
-$boldFont: 'DejaRip-Bold', 'Verdana', sans-serif;
+$baseFont: 'ff-mark-web-pro', 'Verdana', sans-serif;
+$footerFont: 'dejarip', 'Verdana', sans-serif;
 
 //-----------------------------------------------------------------------------
 
@@ -57,6 +56,7 @@ header .inner, section, footer {
     font-size: 3.2rem;
     padding: 60px 0;
     color: $infoColor;
+    font-weight: 300;
     width: 800px; // Override for styling purposes
 }
 
@@ -70,8 +70,7 @@ header .inner, section, footer {
     font-size: 2.6rem;
     p {
         a {
-            font-weight: bold;
-            font-family: $boldFont;
+            font-weight: 600;
             color: $baseColor;
             text-decoration: none;
             &:hover {
@@ -85,6 +84,7 @@ header .inner, section, footer {
     padding: 40px 0;
     font-size: 32px;
     font-size: 3.2rem;
+    font-weight: 300;
     color: $infoColor;
 
     ul {
@@ -102,10 +102,10 @@ footer {
     margin-bottom: 60px;
     font-size: 16px;
     font-size: 1.6rem;
+    font-family: $footerFont;
 
     a {
         font-weight: bold;
-        font-family: $boldFont;
         color: $baseColor;
         text-decoration: none;
 
@@ -117,7 +117,6 @@ footer {
 
 strong {
     font-weight: bold;
-    font-family: $boldFont;
     color: $highlightColor;
 }
 
