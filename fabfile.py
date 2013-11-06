@@ -8,6 +8,7 @@ def deploy():
     local('grunt dist')
     local('tar -cjvf dist.tar.bz2 dist')
     put("dist.tar.bz2", env.tmp_dir)
+    run('mkdir {0}'.format(env.tmp_dir), warn_only=True)
     with cd(env.tmp_dir):
         run('tar -xjvf dist.tar.bz2')
     with cd(env.www_root):

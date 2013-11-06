@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                    {expand: true, cwd: 'app', src: ['assets/images/*.png', 'assets/images/*.svg', 'assets/css/*', 'index.html'], dest: 'dist'}
+                    {expand: true, cwd: 'app', src: ['assets/images/*.png', 'assets/images/*.svg', 'assets/css/*', '*.html'], dest: 'dist'}
                 ]
             }
         },
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
             }
         },
         usemin: {
-            html: 'dist/index.html',
+            html: 'dist/*.html',
             css: ['dist/assets/css/*.css']
         },
         watch: {
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
                 files: [
                     'app/assets/css/*.css',
                     'app/assets/images/*',
-                    'app/index.html'
+                    'app/*.html'
                 ]
             }
         },
