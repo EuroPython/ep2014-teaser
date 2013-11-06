@@ -4,6 +4,7 @@
 
 $highlightColor: #D65216;
 $baseColor: #648899;
+$petrol: #00788c;
 $infoColor: #00788C;
 $background1: #E5EDF1;
 $baseFont: 'ff-mark-web-pro', 'Verdana', sans-serif;
@@ -14,6 +15,7 @@ $footerFont: 'dejarip', 'Verdana', sans-serif;
 html {
     font-size: 62.5%;
     font-family: $baseFont;
+    font-weight: 300;
     line-height: 150%;
 }
 
@@ -125,11 +127,11 @@ strong {
     padding-top: 60px;
     padding-bottom: 60px;
     line-height: 150%;
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
 
     h1, h2, a {
-        color: $highlightColor;
+        color: $petrol;
     }
 
     h1 {
@@ -142,16 +144,15 @@ strong {
 
     h2 {
         text-align: left;
-        font-size: 16px;
-        font-size: 1.6rem;
-        font-weight: 500;
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-weight: 600;
         padding-bottom: 20px;
     }
 
     p.teaser, section {
         width: 715px;
         margin: auto;
-        font-family: $footerFont;
     }
 
     section {
@@ -194,5 +195,15 @@ strong {
 @media (screen and max-width: 400px) {
     html {
         font-size: 50%;
+    }
+}
+
+@media (screen and max-width: 715px) {
+    .contentpage #main {
+        p.teaser, section {
+            width: 96%;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
     }
 }
