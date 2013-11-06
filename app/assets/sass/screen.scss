@@ -33,8 +33,9 @@ header {
         overflow: hidden;
         position: relative;
     }
-    h1 {
+    h1, .logo {
         margin: 30px 0 35px 0;
+        display: block;
     }
     p {
         position: absolute;
@@ -118,6 +119,55 @@ footer {
 strong {
     font-weight: bold;
     color: $highlightColor;
+}
+
+.contentpage #main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 150%;
+    font-size: 14px;
+    font-size: 1.4rem;
+
+    h1, h2, a {
+        color: $highlightColor;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: 120%;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    p.teaser, section {
+        width: 715px;
+        margin: auto;
+        font-family: $footerFont;
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    p {
+        text-align: left;
+        margin-bottom: 1rem;
+        line-height: 150%;
+    }
+
+    p.teaser {
+        text-align: center;
+        margin-bottom: 60px;
+    }
 }
 
 //-----------------------------------------------------------------------------
