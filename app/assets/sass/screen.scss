@@ -4,7 +4,7 @@
 
 $highlightColor: #D65216;
 $baseColor: #648899;
-$petrol: #00788c;
+$petrol: #0095cc;
 $infoColor: #00788C;
 $background1: #E5EDF1;
 $baseFont: 'ff-mark-web-pro', 'Verdana', sans-serif;
@@ -46,6 +46,7 @@ header {
         font-size: 21px;
         font-size: 2.1rem;
         text-align: left;
+        font-weight: 600;
     }
 }
 
@@ -105,7 +106,7 @@ footer {
     margin-bottom: 60px;
     font-size: 16px;
     font-size: 1.6rem;
-    font-family: $footerFont;
+    //font-family: $footerFont;
 
     a {
         font-weight: bold;
@@ -115,6 +116,12 @@ footer {
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    .legal {
+        display: block;
+        margin-top: 10px;
+        color: $petrol;
     }
 }
 
@@ -130,7 +137,7 @@ strong {
     font-size: 16px;
     font-size: 1.6rem;
 
-    h1, h2, a {
+    a {
         color: $petrol;
     }
 
