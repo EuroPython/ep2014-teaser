@@ -1,0 +1,80 @@
+EuroPython 2014 in the bcc Berlin Congress Center
+
+Organisers expect up to 1,200 attendees
+
+The next EuroPython will be held from July 21 - 27 2014 in the bcc Berlin
+Congress Center at the heart of Berlin. After the Pycon US, the EuroPython is
+the second largest global conference for this popular programming language.
+The bcc is located at the central Alexander Square and with its 3,000 m2
+offers ideal facilities for a developer conference. The organiser of the
+event, the Python Software Verband e.V, is expecting up to 1,200 participants.
+The EuroPython in Berlin would then beat the previous attendance record of
+Florence, Italy, which hosted the EuroPython this year for the third time
+running and attracted almost 900 Python enthusiasts.
+
+Berlin offers ideal conditions for a large international developer conference.
+The city with its about 2,500 young businesses has a large and fast-growing
+start-up scene. 300 universities, polytechnics, research institutes and
+technology parks underline Berlin's importance as one of Europe's leading
+science and research locations. Thanks to its rich cultural landscape with
+around 180 museums, renowned international art collections and precious
+works of art as well as a lively art and music scene, Berlin is one of the
+most vibrant and vividly creative metropolitan centres in Europe. The city's
+attractions and the excellent national and international transport links have
+already put Berlin among the top three in the international conference and
+congress region rankings.
+
+The conference will be organised locally by the Python Users Berlin, the
+Django User Group Berlin and the PyLadies Berlin. With five lecture tracks
+and two tutorial tracks running in parallel, the EuroPython conference
+offers a closely-meshed schedule for all attendees.
+Tickets will be available in January.
+
+The EuroPython logo expresses what is on the organiser's minds, which is
+getting people from very different areas of expertise together to communicate.
+Python is used as a programming language in industrial and service enterprises
+as well as in research and teaching. The EuroPython brings together developers
+who work together on fascinating tasks and as a result have found unique
+solutions to their problems.
+
+
+About Python
+
+Python is an interpreted high-level language. In the TIOBE index Python has
+featured among the top 10 of favourite programming languages for years.
+Python is ideal for development. It is a lean language that is easy to learn
+and helps blur the boundaries between users and developers. The language was
+created in the early 1990s by Guido van Rossum. Today, the language is
+developed by a large open source community and enhancements are under the roof
+of the Python Software Foundation.
+
+About the Python Software Verband e.V.
+
+The Python Software Verband e.V. was formed from the DZUG e.V.
+(German-Speaking Zone User Group), which was itself founded in 2004.
+The Python Software Verband is the umbrella organisation of the
+German-speaking Python community. It is a non-profit organisation that
+focuses on promoting the Python programming language.
+
+About the EuroPython Society
+
+The EuroPython Society was founded in 2004 to provide a legal framework for the
+annual EuroPython conferences.
+
+About the Python Users Berlin
+
+Founded in 2002, Python Users Berlin holds monthly meetings for
+presentations and talks about all facets of the Python programming language.
+Python Users Berlin currently has around 330 members.
+
+About the Django User Group Berlin
+
+The Django User Group Berlin was founded in 2009. Its approximately 130
+members meet monthly for talks related to the Python web framework Django.
+
+About the PyLadies Berlin
+
+PyLadies is an international movement that motivates and supports women to
+engage with and take an active role within the Python community as developers.
+PyLadies Berlin has around 100 members. 
+
