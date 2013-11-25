@@ -5,7 +5,7 @@ Organisers expect up to 1,200 attendees
 The next EuroPython will be held from July 21 - 27 2014 in the bcc Berlin
 Congress Center at the heart of Berlin. After the Pycon US, the EuroPython is
 the second largest global conference for this popular programming language.
-The bcc is located at the central Alexander Square and with its 3,000 m2
+The bcc is located at the central Alexanderplatz and with its 3,000 m2
 offers ideal facilities for a developer conference. The organiser of the
 event, the Python Software Verband e.V, is expecting up to 1,200 participants.
 The EuroPython in Berlin would then beat the previous attendance record of
