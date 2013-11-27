@@ -7,6 +7,7 @@ env.hosts = ['pyep00.gocept.net']
 def deploy():
     local('grunt dist')
     local('tar -cjvf dist.tar.bz2 dist')
+    run('mkdir -p {0}'.format(env.tmp_dir))
     put("dist.tar.bz2", env.tmp_dir)
     run('mkdir {0}'.format(env.tmp_dir), warn_only=True)
     with cd(env.tmp_dir):

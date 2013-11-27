@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                    {expand: true, cwd: 'app', src: ['assets/images/*.png', 'assets/images/*.svg', 'assets/css/*', '*.html'], dest: 'dist'}
+                    {expand: true, cwd: 'app', src: ['assets/images/*.png', 'assets/images/*.svg', 'assets/css/*', '*.html', '*.txt'], dest: 'dist'}
                 ]
             }
         },
