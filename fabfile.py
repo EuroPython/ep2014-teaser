@@ -15,3 +15,4 @@ def deploy():
     with cd(env.www_root):
         sudo('rsync -av --delete {0}/dist/* ./'.format(env.tmp_dir),
             user=env.srv_user)
+    run('rm -rf {0}'.format(env.tmp_dir))
