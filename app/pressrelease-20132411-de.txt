@@ -35,6 +35,7 @@ Dienstleistungsunternehmen sowie in der Forschung und Lehre eingesetzt.  Auf
 der EuroPython kommen Entwickler zusammen, die an faszinierenden
 Aufgabenstellungen arbeiten und dabei einzigartige Lösungen gefunden haben.
 
+
 Über Python
 
 Python ist eine interpretierte höhere Programmiersprache. Sie rangiert im
@@ -45,6 +46,7 @@ Anwendern und Entwicklern verwischt. Die Sprache wurde in den späten achtzigern
 von Guido van Rossum entwickelt. Heute wird die Sprache von einer großen
 Open-Source-Community weiterentwickelt und von der Python Software Foundation
 (PSF) abgesichert, die die Namensrechte an der Marke Python hält.
+
 
 Über den Python Software Verband e.V.
 
@@ -65,11 +67,13 @@ koordiniert gemeinsam mit der lokalen Organisation die Ausführung der
 Europython Konferenzen.  Die EuroPython Society wurde 2004 gegründet, um in den
 darauf folgenden Jahren eine erfolgreiche Python Konferenz zu gewährleisten.
 
+
 Über die Python Users Berlin
 
 Die Python Users Berlin gründeten sich 2002. Die Gruppe trifft sich monatlich
 zu Vorträgen und Diskussionen zu Themen rund um die Programmiersprache Python.
 Zurzeit haben die Python Users Berlin rund 330 Mitglieder.
+
 
 Über die Django User Group Berlin
 
@@ -84,3 +88,4 @@ Die PyLadies bilden eine internationale Bewegung, die Frauen motiviert und
 unterstützt, innerhalb der Python-Community als Entwicklerinnen in führenden
 Positionen aktiv zu werden. Die PyLadies Berlin haben zurzeit rund 100
 Mitglieder.
+

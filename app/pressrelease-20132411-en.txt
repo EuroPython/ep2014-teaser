@@ -37,6 +37,7 @@ as well as in research and education. The EuroPython brings together developers
 who work together on fascinating tasks and as a result have found unique
 solutions to their problems.
 
+
 About Python
 
 Python is an interpreted high-level language. In the TIOBE index Python has
@@ -47,6 +48,7 @@ Rossum. Today, the language is developed by a large open source community and
 backed by the Python Software Foundation (PSF), which owns the copyright to
 Python.
 
+
 About the Python Software Verband e.V.
 
 The Python Software Verband e.V. represents the interests of the
@@ -56,6 +58,7 @@ different Python interests groups. Its members are involved in a wide range of
 Python activities including Python core development and many Open Source
 projects.
 
+
 About the EuroPython Society
 
 The EuroPython Society (EPS) is a Swedish non-profit organization which holds
@@ -64,18 +67,23 @@ with local organizers to run EuroPython conferences. The EPS was formed in 2004
 with the mission to turn EuroPython into a successful Python conference series
 for the years to come.
 
+
 About the Python Users Berlin
 
 Founded in 2002, Python Users Berlin holds monthly meetings for presentations
 and talks about all facets of the Python programming language. Python Users
-Berlin currently has around 330 members.  About the Django User Group Berlin
+Berlin currently has around 330 members.
+
+
+About the Django User Group Berlin
+
 The Django User Group Berlin was founded in 2009. Its approximately 130 members
 meet monthly for talks related to the Python web framework Django.
+
 
 About the PyLadies Berlin
 
 PyLadies is an international movement that motivates and supports women to
 engage with and take an active role within the Python community as developers.
 PyLadies Berlin has around 100 members.
-
 
