@@ -7,6 +7,7 @@ $baseColor: #648899;
 $petrol: #0095cc;
 $infoColor: #00788C;
 $background1: #E5EDF1;
+$warning: #ED6E48;
 $baseFont: 'ff-mark-web-pro', 'Verdana', sans-serif;
 $footerFont: 'dejarip', 'Verdana', sans-serif;
 
@@ -85,6 +86,26 @@ header .inner, section, footer {
         a {
             font-weight: 600;
             color: $baseColor;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+#warning {
+    width: 782px;
+    border-radius: 5px;
+    background: $warning;
+    color: #FFFFFF;
+    padding: 38px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-size: 2.4rem;
+    p {
+        a {
+            font-weight: 600;
+            color: #FFFFFF;
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
